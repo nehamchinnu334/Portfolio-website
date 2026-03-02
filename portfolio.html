@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neha | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background-color: linear-gradient(hsl(300, 100%, 94%));
+            padding: 60px 0;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            transition: 0.4s ease;
+        }
+        #projects {
+            background-color: hsl(300, 10%, 96%);
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Neha </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="fw-bold">Neha </h1>
+                <p class="lead">
+                Engineering student passionate about Web Development and front-end design. 
+                I build structured web pages and interactive forms using HTML and CSS, 
+                focusing on clean layout and user-friendly interfaces.
+                </p>
+                <a href="#projects" class="btn btn-dark">View Projects</a>
+                <a href="resume.pdf" class="btn btn-outline-dark ms-2" target="_blank">Download Resume</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="your-photo.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">About Me</h2>
+        <p>
+            I am an enthusiastic Engineering student with a strong interest in 
+      Web Development and front-end design. I have developed projects such as 
+      a structured Bio Data Web Page and a styled Responsive HTML Registration Form, 
+      demonstrating my understanding of HTML elements, form handling, layout design, 
+      and CSS styling techniques.
+      <br><br>
+      Through these projects, I have gained practical experience in creating 
+      user-friendly interfaces, implementing form inputs, applying styling effects, 
+      and designing clean webpage layouts.
+        </p>
+    </div>
+</section>
+
+<!--Skill Section-->
+
+<section id="skills" class="py-5" style="background-color: #f0f2f6;">
+    <div class="container">
+        <h2 class="fw-bold text-center text-black mb-4">Skills</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-3 col-6 mb-3">
+                <div class="p-3 border border-secondary rounded bg-dark text-white">
+                    <h6 class="mb-0">HTML</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 mb-3">
+                <div class="p-3 border border-secondary rounded bg-dark text-white">
+                    <h6 class="mb-0">CSS</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 mb-3">
+                <div class="p-3 border border-secondary rounded bg-dark text-white">
+                    <h6 class="mb-0">Bootstrap</h6>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 mb-3">
+                <div class="p-3 border border-secondary rounded bg-dark text-white">
+                    <h6 class="mb-0">JavaScript (Basic)</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Education</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.E. Electronics & Communication Engineering</td>
+                        <td>K S Institute of Technology</td>
+                        <td>2022 – 2026</td>
+                        <td>CGPA: 6.6</td>
+                    </tr>
+                    <tr>
+                        <td>PUC / 12th</td>
+                        <td>RNS Pu College</td>
+                        <td>2022</td>
+                        <td>78%</td>
+                    </tr>
+                    <tr>
+                        <td>SSLC / 10th</td>
+                        <td>St.Philomena's Memorial High School</td>
+                        <td>2020</td>
+                        <td>85%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsive HTML Registration Form</h5>
+                        <p class="card-text">
+                            Designed and developed a styled registration form using 
+                            HTML and CSS. The form includes input fields, radio buttons, 
+                            checkboxes, dropdown menus, and form validation elements.
+                            <br><br>
+                            <b>Tools:</b> HTML, CSS
+                        </p>
+                        <a href="https://github.com/nehamchinnu334/Responsive-HTML-Registration-Form" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Bio Data Web Page</h5>
+                        <p class="card-text">
+                            Developed a personal bio data webpage using basic HTML. 
+                            The project includes structured headings, tables, lists, 
+                            image alignment, and hyperlinks to display personal information 
+                            in a well-organized format.
+                            <br><br>
+                            <b>Tools:</b> HTML, Inline CSS
+                        </p>
+                        <a href="https://github.com/nehamchinnu334/Bio-Data-Web-Page" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Contact</h2>
+        <p>
+            Email: nehamchinnu334@gmail.com <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/neha-m-1052b0311" target="_blank">LinkedIn Profile</a> <br>
+            GitHub: <a href="https://github.com/nehamchinnu334" target="_blank">GitHub Profile</a><br>
+            Netlify: <a href="https://app.netlify.com/teams/nehamchinnu334" target="_blank">Netlify Profile</a>
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <p>© 2026 Neha. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>                                                                                                                                                                       
